@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <group
+        android:id="@+id/grp0">
+        <item
+            android:id="@+id/navigation_item_0"
+            android:checked="true"
+            android:icon="@drawable/ic_home"
+            android:title="@string/drawerItem0" />
+
+        <item
+            android:id="@+id/navigation_item_1"
+            android:icon="@drawable/ic_news"
+            android:title="@string/drawerItem1" />
+    </group>
+
+    <group
+        android:id="@+id/grp1">
+        <item
+            android:id="@+id/navigation_item_2"
+            android:icon="@drawable/ic_classes"
+            android:title="@string/drawerItem2" />
+        <item
+            android:id="@+id/navigation_item_3"
+            android:icon="@drawable/ic_recent_grades"
+            android:title="@string/drawerItem3" />
+        <item
+            android:id="@+id/navigation_item_4"
+            android:icon="@drawable/ic_mail"
+            android:title="@string/drawerItem4" />
+    </group>
+
+    <group
+        android:id="@+id/grp2">
+
+        <item
+            android:id="@+id/navigation_item_5"
+            android:icon="@drawable/ic_profile_circle"
+            android:title="@string/drawerItem5" />
+        <item
+            android:id="@+id/navigation_item_6"
+            android:icon="@drawable/ic_settings"
+            android:title="@string/drawerItem6" />
+        <item
+            android:checkable="false"
+            android:id="@+id/navigation_item_7"
+            android:icon="@drawable/ic_login"
+            android:title="@string/drawerItem7" />
+    </group>
+
+
+    <group
+        android:id="@+id/grp3">
+        <item
+            android:id="@+id/navigation_item_8"
+            android:icon="@drawable/ic_faq"
+            android:title="@string/drawerItem8" />
+
+        <item
+            android:id="@+id/navigation_item_9"
+            android:icon="@drawable/ic_about_us"
+            android:title="@string/drawerItem9" />
+    </group>
+
+</menu>

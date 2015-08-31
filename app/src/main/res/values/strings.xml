@@ -1,0 +1,140 @@
+<resources>
+
+    <string name="app_name">WISDOM</string>
+
+    <!-- TODO: Is this nescessary? -->
+    <string name="action_settings">Settings</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <!-- In case I fuck up -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+
+    <!-- Drawer strings -->
+    <string name="drawerItem0">Home</string>
+    <string name="drawerItem1">East Side News</string>
+
+    <string name="drawerItem2">Classes</string>
+    <string name="drawerItem3">Recent Grades</string>
+    <string name="drawerItem4">Mail</string>
+
+    <string name="drawerItem5">Profile</string>
+    <string name="drawerItem6">Settings</string>
+    <string name="drawerItem7">Login</string>
+
+    <string name="drawerItem8">FAQ</string>
+    <string name="drawerItem9">About us</string>
+
+    <string name="name">Welcome Guest</string>
+    <!-- End drawer strings -->
+
+    <!-- Notification strings -->
+    <string name="notLoggedIn">Please log in to use this feature!</string>
+    <!-- End notification strings -->
+
+    <!-- Login strings -->
+    <string name="prompt_username">Username</string>
+    <string name="prompt_password">Password</string>
+    <string name="action_sign_in">Sign in</string>
+    <string name="action_sign_in_short">Sign in</string>
+    <string name="error_incorrect_password">Incorrect Password!</string>
+    <string name="error_field_required">This field is required!</string>
+    <string name="error_invalid_username">Please enter a valid username!</string>
+    <string name="stay_logged_in">Remember me</string>
+    <!-- End login strings -->
+
+    <!-- FAQ strings -->
+    <string name="faq_q0">What is WISDOM?</string>
+    <string name="faq_a0">
+        WISDOM stands for Williamsville Information System Displayed On Mobile. With the intent of
+        providing an mobile experience which is on par to the service which the Williamsville
+        District provides, and to create an educational experience for the developers, we have
+        decided to create an app which satisfies all needs of the student population, while at the
+        same time, provide an extended information system based off user input.
+    </string>
+
+    <string name="faq_q1">How does it work?</string>
+    <string name="faq_a1">
+        When you enter your credentials, it first sends your username and password to a secure
+        server, which is hosted by Ex Nihilo, and programmed by the same programmers who programmed
+        WISDOM. Then, the server sends data to WITS, in which it then takes the data received from
+        WITS. The data is interpreted and sent back to WISDOM, to be shown to you, the user.
+    </string>
+
+    <string name="faq_q2">What information is saved on the server?</string>
+    <string name="faq_a2">
+        Nothing. That\'s right. Nothing. The server acts as a data interpretation service. It only
+        relieves, reformat, and sends the data to its requested location.
+    </string>
+
+    <string name="faq_q3">What about information saved on my device?</string>
+    <string name="faq_a3">
+        Unless you specifically check the remember me button, no personal user data is saved. Only
+        information not personal, such as East Side News, are cached on your phone, in case of an
+        internet shortage, as well as the last username entered on the login page. If you do choose
+        to save personal data, your data is encrypted, and is cached only on your device. On logout
+        or reboot, if you choose to not save data, all cached personal data is wiped.
+    </string>
+
+    <string name="faq_q4">Were you asked to program this?</string>
+    <string name="faq_a4">
+        No. The Williamsville District has no intention of creating a mobile platform, a student at
+        one of the schools has taken the project up themselves to create one. The process above, is,
+        unfortunately necessary, as the district has no intention of creating an interface for
+        applications such as WISDOM to use. This is why, as a result, the programmers must use such
+        a roundabout method.
+    </string>
+
+    <string name="faq_q5">Who are you? Can I contact you?</string>
+    <string name="faq_a5">Please see the "About Us" tab.</string>
+    <!-- End FAQ strings -->
+
+    <!-- About Us strings -->
+    <string name="about_us_title">About Us</string>
+
+    <string name="about_us_logo_desc">Ex Nihilo Logo</string>
+
+    <string name="about_us_introduction0">\"Ex Nihilo\" is a phrase meaning \"from nothing\".
+        Although used heavily in religious contexts, it resonates with our origins. Although we are
+        simply ordinary students at Williamsville East High School, we are as excellent as those
+        with a decorated history. We have the drive and passion to innovate, design, and create at
+    </string>
+
+    <string name="about_us_introduction1">
+        any stage in our life. We want to show that things can come ex nihilo.
+    </string>
+
+    <string name="about_us_contact">
+        If you have any business inquiries, please contact us at ExNihiloDev@gmail.com. Please
+        insert the tag "[WISDOM Business]" or your email may be caught by the spam filter.
+    </string>
+
+    <string name="about_us_devtest_title">Contributors</string>
+    <string name="about_us_devtest_note">
+        Note: Pseudonyms will be italicized.
+    </string>
+
+    <string name="about_us_dev_names">Developers</string>
+
+    <string name="about_us_lead_dev_name">xEden</string>
+    <string name="about_us_lead_dev_title">Lead Developer</string>
+
+    <string name="about_us_art_dev_name">Em</string>
+    <string name="about_us_art_dev_title">Graphics Designer (Head Potato)</string>
+
+    <string name="about_us_editor_dev_name">Anonymous</string>
+    <string name="about_us_editor_dev_title">Editor</string>
+
+    <string name="about_us_bug_tester_names">Bug Testers</string>
+    <!-- Current bug testers:
+        Abbas - Abbas Rizvi
+        Nihkil - ?
+        Sam - ?
+    -->
+    <!-- End About Us strings -->
+
+    <!-- Setting strings -->
+    <string name="settings_title">General Settings</string>
+    <string name="settings_school_color">School Theme</string>
+    <string name="settings_profile_photo">Display Profile Photo?</string>
+
+</resources>

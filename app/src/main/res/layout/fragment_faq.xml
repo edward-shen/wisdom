@@ -1,0 +1,61 @@
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="tk.easthigh.witsmobile.FaqFragment">
+
+    <LinearLayout
+        android:id="@+id/container"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingLeft="16dp"
+        android:paddingRight="16dp"
+        android:paddingTop="16dp">
+
+        <TextView
+            style="@style/noRecyclerView.title"
+            android:text="@string/faq_q0" />
+        <TextView
+            style="@style/noRecyclerView"
+            android:text="@string/faq_a0" />
+
+        <TextView
+            style="@style/noRecyclerView.title"
+            android:text="@string/faq_q1" />
+        <TextView
+            style="@style/noRecyclerView"
+            android:text="@string/faq_a1" />
+
+        <TextView
+            style="@style/noRecyclerView.title"
+            android:text="@string/faq_q2" />
+        <TextView
+            style="@style/noRecyclerView"
+            android:text="@string/faq_a2" />
+
+        <TextView
+            style="@style/noRecyclerView.title"
+            android:text="@string/faq_q3" />
+        <TextView
+            style="@style/noRecyclerView"
+            android:text="@string/faq_a3" />
+
+        <TextView
+            style="@style/noRecyclerView.title"
+            android:text="@string/faq_q4" />
+        <TextView
+            style="@style/noRecyclerView"
+            android:text="@string/faq_a4" />
+
+        <TextView
+            style="@style/noRecyclerView.title"
+            android:text="@string/faq_q5" />
+        <TextView
+            style="@style/noRecyclerView"
+            android:text="@string/faq_a5" />
+    </LinearLayout>
+
+</ScrollView>
+

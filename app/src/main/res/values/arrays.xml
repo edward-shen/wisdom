@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!-- In-case-fucked-up strings -->
+    <string-array name="home_activities">
+        <item>The Developer</item>
+        <item>You should</item>
+        <item>In fact,</item>
+        <item>We will</item>
+    </string-array>
+
+    <string-array name="home_activities_subtitle">
+        <item>broke something major.</item>
+        <item>report it immediately.</item>
+        <item>send a bug report.</item>
+        <item>thank you for it.</item>
+    </string-array>
+    <!-- End in-case-fucked-up strings -->
+
+    <!-- Settings strings -->
+    <string-array name="settings_color">
+        <item>East (Default)</item>
+        <item>North</item>
+        <item>South</item>
+    </string-array>
+    <!-- End settings strings -->
+</resources>
