@@ -1,0 +1,60 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent" tools:context="tk.easthigh.witsmobile.SettingsFragment">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingLeft="16dp"
+        android:paddingRight="16dp"
+        android:paddingTop="16dp">
+
+        <TextView android:id="@+id/settings_title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="24sp"
+            android:layout_marginBottom="16dp"
+            android:textColor="@color/primary_text_default_material_light"
+            android:text="@string/settings_title"/>
+
+        <TextView android:id="@+id/settings_color"
+            android:layout_width="200dp"
+            android:layout_height="40dp"
+            android:text="@string/settings_school_color"
+            android:layout_marginBottom="8dp"
+            android:textSize="16sp"
+            android:gravity="center_vertical"
+            android:textColor="@color/primary_text_default_material_light"
+            android:layout_below="@id/settings_title"/>
+        <!-- TODO: add arrow thingy -->
+        <Spinner android:id="@+id/settings_color_spinner"
+            android:layout_width="fill_parent"
+            android:layout_height="40dp"
+            android:layout_marginBottom="8dp"
+            android:textSize="14sp"
+            android:layout_toEndOf="@id/settings_color"
+            android:layout_below="@id/settings_title"/>
+
+        <TextView android:id="@+id/settings_profile_photo"
+            android:layout_width="200dp"
+            android:layout_height="40dp"
+            android:text="@string/settings_profile_photo"
+            android:layout_marginBottom="8dp"
+            android:textSize="16sp"
+            android:gravity="center_vertical"
+            android:textColor="@color/primary_text_default_material_light"
+            android:layout_below="@id/settings_color"/>
+        <Switch
+            android:id="@+id/settings_profile_photo_switch"
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:layout_below="@id/settings_color_spinner"
+            android:layout_alignParentEnd="true"
+            android:checked="true"
+            />
+
+
+
+    </RelativeLayout>
+
+</ScrollView>

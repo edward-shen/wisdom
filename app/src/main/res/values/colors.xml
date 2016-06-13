@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!--
+    Primary Colors are 300, 500, and 700 for light, default, and dark, respectively.
+    Accent colors are A100 and A700 for light and dark, respectively.
+    -->
+
+    <!-- Williamsville East -->
+    <color name="red">#F44336</color>
+    <color name="red_light">#E57373</color>
+    <color name="red_dark">#D32F2F</color>
+    <color name="red_accent_light">#FFE57F</color>
+    <color name="red_accent_dark">#FFAB00</color>
+
+    <!--
+    Williamsville South
+    Original Primary Color; #001F63
+    @South please have a secondary color ;-;
+    -->
+    <color name="blue">#3F51B5</color>
+    <color name="blue_light">#7986CB</color>
+    <color name="blue_dark">#303F9F</color>
+    <color name="blue_accent_light">#82B1FF</color>
+    <color name="blue_accent_dark">#2962FF</color>
+
+    <!--
+    Williamsville North
+    Original Primary Color: 094007
+    @North please have a secondary color ;-;
+    -->
+    <color name="green">#4CAF50</color>
+    <color name="green_light">#81C784</color>
+    <color name="green_dark">#388E3C</color>
+    <color name="green_accent_light">#B9F6CA</color>
+    <color name="green_accent_dark">#00C853</color>
+
+</resources>
