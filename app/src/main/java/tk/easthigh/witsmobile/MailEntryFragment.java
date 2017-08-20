@@ -6,7 +6,6 @@ import android.animation.AnimatorListenerAdapter;
 import android.annotation.TargetApi;
 import android.app.Activity;
 import android.app.Fragment;
-import android.app.FragmentManager;
 import android.content.Context;
 import android.os.Build;
 import android.os.Bundle;
@@ -22,6 +21,7 @@ import tk.easthigh.witsmobile.tools.MailEntryAdapter;
 import tk.easthigh.witsmobile.tools.RecyclerAdapter;
 
 public class MailEntryFragment extends Fragment {
+
     private View view;
     private ProgressBar progressView;
     private RecyclerView recyclerView;
@@ -36,13 +36,12 @@ public class MailEntryFragment extends Fragment {
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
+
         Activity activity = getActivity();
         view = inflater.inflate(R.layout.fragment_mail_entry, container, false);
         progressView = (ProgressBar) view.findViewById(R.id.mail_entry_progress);
         recyclerView = (RecyclerView) view.findViewById(R.id.mail_entry_recyclerview);
-        context = activity.getApplicationContext();
-
-        System.out.println(context.getApplicationInfo().toString());
+        context = getActivity().getApplicationContext();
 
         showProgress(true);
 

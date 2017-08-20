@@ -1,12 +1,7 @@
 package tk.easthigh.witsmobile.tools;
 
 import android.content.Context;
-import android.content.SharedPreferences;
-import android.database.Cursor;
-import android.net.Uri;
 import android.os.AsyncTask;
-import android.provider.MediaStore;
-import android.support.annotation.NonNull;
 import android.util.Base64;
 import android.util.Log;
 
@@ -386,8 +381,7 @@ public class DataManager {
 
     public void setMailEntry(int pos){
         if (isOnline()){
-            if (sPrefs.getString("mailentry" + Integer.toString(pos) + ".body") == null){
-
+            if (sPrefs.getString("mailentry" + Integer.toString(pos) + ".message") == null){
                 final SecurePreferences sPrefs = this.sPrefs;
                 final String link = sPrefs.getString("mail" + Integer.toString(pos) + ".link");
                 RunnableFuture runnable = new FutureTask<>(new Callable<Boolean>() {
@@ -395,20 +389,33 @@ public class DataManager {
                     public Boolean call() {
                         DataManager dataManager = new DataManager(sPrefs);
                         String keyValues[] = {"data", "link"};
-                        String valueValues[] = {"getMailEntry", link};
+                        String filteredLink = prepLinkForPOST(link);
+                        String valueValues[] = {"getMailEntry", filteredLink};
                         JSONArray entry = dataManager.getArray(keyValues, valueValues);
-                        try {
-                            Log.v(LOG_TAG, (String) entry.getJSONArray(0).get(0));
-                        } catch (JSONException e){
-                            e.printStackTrace();
-                        }
+//                        try {
+//                            Log.v(LOG_TAG, entry.);
+//                        } catch (JSONException e){
+//                            e.printStackTrace();
+//                        }
                         return true;
                     }
                 });
 
                 new Thread(runnable).start();
             }
-        } else { Log.e("DataManager", "Cannot get mail entry due to being offline!"); }
+        } else { Log.e(LOG_TAG, "Cannot get mail entry due to being offline!"); }
+    }
+
+    private String prepLinkForPOST(String link){
+        // FIXME: Doesn't translate '=' into '%3D'
+        String[] testStrings = {"=","&"};
+        String[] replaceStrings = {"%3D", "%26"};
+        String filteredLink = "";
+
+        for (int i = 0; i < testStrings.length; i++)
+            filteredLink = link.replace(testStrings[i], replaceStrings[i]);
+
+        return filteredLink;
     }
 
     public Boolean setProfilePic(final String username, final String password) {

@@ -4,9 +4,7 @@ package tk.easthigh.witsmobile;
 import android.app.Activity;
 import android.app.Fragment;
 import android.content.Context;
-import android.content.Intent;
 import android.content.SharedPreferences;
-import android.net.Uri;
 import android.os.Bundle;
 import android.util.Log;
 import android.view.LayoutInflater;
@@ -16,7 +14,6 @@ import android.view.ViewGroup;
 import org.xml.sax.SAXException;
 
 import java.io.IOException;
-import java.net.MalformedURLException;
 import java.net.URL;
 import java.util.ArrayList;
 import java.util.Arrays;
@@ -58,6 +55,7 @@ public class HomeFragment extends RssFragmentBase {
 
         activity = getActivity();
         sharedPreferences =  activity.getSharedPreferences("homePageRSS", Context.MODE_PRIVATE);
+
 /*
         if (!sharedPreferences.getBoolean("isCached", false)) {
             if (new DataManager().isOnline()) {
@@ -128,7 +126,7 @@ public class HomeFragment extends RssFragmentBase {
                     } else
                         Log.i(LOG_TAG, "No Cache Data!");
 
-                } else if (feed != null) { // Online and feed is ready
+                } else if (feed != null) { // Online and feed is ready. Feed is not always not null
 
                     Log.i(LOG_TAG, "Extracting data from feed...");
 
@@ -157,7 +155,7 @@ public class HomeFragment extends RssFragmentBase {
                     Log.i(LOG_TAG, "Caching data...");
                     if (dataManager.verifyRssCache("eastSideRSS", rssItems.size(), true, setIdentifiers, rssTitles, rssDesc)) {
                         sharedPreferences.edit().putStringSet("rssTitles", new HashSet<>(Arrays.asList(rssTitles))).apply();
-                        // FIXME Why is this not equal in size as all other sets
+                        // FIXME: Why is this not equal in size as all other sets
                         sharedPreferences.edit().putStringSet("rssDesc", new HashSet<>(Arrays.asList(rssDesc))).apply();
                         Log.i(LOG_TAG, "Caching successful!");
                     } else
